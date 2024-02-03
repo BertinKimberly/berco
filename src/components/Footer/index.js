@@ -15,7 +15,7 @@ const Footer = () => {
    console.log(errors);
 
    return (
-      <footer className='mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark'>
+      <footer className='mt-16 border-t dark:bg-dark dark:text-white  m-2 sm:m-10 flex flex-col items-center text-dark bg-white'>
          <h3 className='mt-16 font-medium dark:font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4'>
             Interesting Stories | Updates | Guides
          </h3>
@@ -26,7 +26,7 @@ const Footer = () => {
 
          <form
             onSubmit={handleSubmit(onSubmit)}
-            className='mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-light dark:bg-dark p-1 sm:p-2 rounded mx04'
+            className='mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-dark dark:bg-light p-1 sm:p-2 rounded mx04'
          >
             <input
                type='email'
@@ -37,7 +37,7 @@ const Footer = () => {
 
             <input
                type='submit'
-               className='bg-dark text-light dark:text-dark dark:bg-light cursor-pointer font-medium rounded px-3 sm:px-5 py-1'
+               className='bg-light text-dark   dark:text-white dark:bg-dark cursor-pointer font-medium rounded px-3 sm:px-5 py-1'
             />
          </form>
          <div className='flex items-center mt-8'>
@@ -63,7 +63,7 @@ const Footer = () => {
                aria-label='Check my profile on Github'
                target='_blank'
             >
-               <GithubIcon className='fill-light dark:fill-dark  hover:scale-125 transition-all ease duration-200' />
+               <GithubIcon className='fill-dark dark:fill-light  hover:scale-125 transition-all ease duration-200' />
             </a>
             <a
                href={siteMetadata.dribbble}
@@ -75,26 +75,10 @@ const Footer = () => {
             </a>
          </div>
 
-         <div className='w-full  mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex  flex-col md:flex-row items-center justify-between'>
-            <span className='text-center'>
+         <div className='w-full  mt-16 md:mt-24 font-medium flex  items-center justify-center  '>
+            <span className='text-center w-max border-t pt-5 px-2'>
                &copy;2024 Berco. All rights reserved.
             </span>
-            <Link
-               href='/sitemap.xml'
-               className='text-center underline my-4 md:my-0'
-            >
-               sitemap.xml
-            </Link>
-            <div className='text-center'>
-               Made with &hearts; by{" "}
-               <a
-                  href='https://devdreaming.com'
-                  className='underline'
-                  target='_blank'
-               >
-                  CodeBucks
-               </a>
-            </div>
          </div>
       </footer>
    );
