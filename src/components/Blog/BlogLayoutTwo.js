@@ -23,7 +23,7 @@ const BlogLayoutTwo = ({ blog }) => {
       </Link>
 
       <div className="col-span-12  lg:col-span-8 w-full">
-        <span className="inline-block w-full uppercase text-accent dark:text-accentDark font-semibold text-xs sm:text-sm">
+        <span className="inline-block w-full uppercase text-blue-600 dark:text-accentDark font-semibold text-xs sm:text-sm">
           {blog.tags[0]}
         </span>
         <Link href={blog.url} className="inline-block my-1">

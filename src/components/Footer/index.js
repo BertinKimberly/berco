@@ -2,7 +2,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
-import Link from "next/link";
 import siteMetadata from "@/src/utils/siteMetaData";
 
 const Footer = () => {
@@ -26,13 +25,13 @@ const Footer = () => {
 
          <form
             onSubmit={handleSubmit(onSubmit)}
-            className='mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-dark dark:bg-light p-1 sm:p-2 rounded mx04'
+            className='mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-dark  dark:bg-light p-1 sm:p-2 rounded mx04'
          >
             <input
                type='email'
                placeholder='Enter your email'
                {...register("email", { required: true, maxLength: 80 })}
-               className='w-full bg-transparent pl-2 sm:pl-0 text-dark focus:border-dark focus:ring-0 border-0 border-b mr-2 pb-1'
+               className='w-full bg-transparent pl-2 sm:pl-0 text-light dark:text-dark focus:border-dark focus:ring-0 border-0 border-b mr-2 pb-1'
             />
 
             <input
