@@ -12,9 +12,7 @@ const HomeCoverSection = ({ blogs }) => {
    return (
       <div className='w-full inline-block'>
          <div className='mx-5 sm:mx-10 text-dark dark:text-light'>
-            <h1 className='text-3xl mt-10'>
-               Welcome to This blog . Enjoy accordingly
-            </h1>
+            
             <div className='my-20 py-10 md:px-4  bg-dry '>
                <div className='lg:grid lg:grid-cols-2 lg:gap-10 items-center'>
                   <div className='flex lg:gap-10 gap-6 flex-col'>
