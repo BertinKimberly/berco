@@ -3,7 +3,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
 import siteMetadata from "@/src/utils/siteMetaData";
-
+import Link from "next/link";
 const Footer = () => {
    const {
       register,
@@ -12,6 +12,79 @@ const Footer = () => {
    } = useForm();
    const onSubmit = (data) => console.log(data);
    console.log(errors);
+
+   const Links = [
+      {
+         title: "Pages",
+         links: [
+            {
+               name: "Home",
+               link: "/",
+            },
+            {
+               name: "About",
+               link: "/about",
+            },
+            {
+               name: "Contact Me",
+               link: "/contact",
+            },
+         ],
+      },
+      {
+         title: "Categories",
+         links: [
+            {
+               name: "Heroes Of The Bible",
+               link: "/categories/Heroes Of The Bible",
+            },
+            {
+               name: "Faith",
+               link: "/categories/Faith",
+            },
+            {
+               name: "Prayer",
+               link: "/categories/Prayer",
+            },
+            {
+               name: "Christian Living",
+               link: "/categories/Christian Living",
+            },
+            {
+               name: "Christian music and art",
+               link: "/categories/Christian music and art",
+            },
+         ],
+      },
+      {
+         title: "Me",
+         links: [
+            {
+               name: "Dashboard",
+               link: "/dashboard",
+            },
+
+            {
+               name: "Create New Post",
+               link: "/create-post",
+            },
+         ],
+      },
+      {
+         title: "Me",
+         links: [
+            {
+               name: "Dashboard",
+               link: "/dashboard",
+            },
+
+            {
+               name: "Create New Post",
+               link: "/create-post",
+            },
+         ],
+      },
+   ];
 
    return (
       <footer className='mt-16 border-t dark:bg-dark dark:text-white  m-2 sm:m-10 flex flex-col items-center text-dark bg-white'>
@@ -39,6 +112,33 @@ const Footer = () => {
                className='bg-light text-dark   dark:text-white dark:bg-dark cursor-pointer font-medium rounded px-3 sm:px-5 py-1'
             />
          </form>
+         <div className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 justify-between w-full mt-16 border-t">
+         {Links.map((link, index) => (
+                  <div
+                     key={index}
+                     className='col-span-1 md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0'
+                  >
+                     <h3 className='text-xl lg:leading-7 font-medium mb-4 sm:mb-5 lg:mb-6 pb-0.5 text-dark dark:text-white'>
+                        {link.title}
+                     </h3>
+                     <ul className='text-sm flex flex-col space-y-3'>
+                        {link.links.map((text, index) => (
+                           <li
+                              key={index}
+                              className='flex items-baseline'
+                           >
+                              <Link
+                                 href={text.link}
+                                 className='inline-block w-full hover:underline transition duration-300 ease-in'
+                              >
+                                 {text.name}
+                              </Link>
+                           </li>
+                        ))}
+                     </ul>
+                  </div>
+               ))}
+         </div>
          <div className='flex items-center mt-8'>
             <a
                href={siteMetadata.linkedin}
