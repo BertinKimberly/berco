@@ -112,7 +112,7 @@ const Footer = () => {
                className='bg-light text-dark   dark:text-white dark:bg-dark cursor-pointer font-medium rounded px-3 sm:px-5 py-1'
             />
          </form>
-         <div className="grid grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 justify-between w-full mt-16 border-t">
+         <div className="grid  grid-cols-1 xs:grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 sm:justify-between w-full mt-16 border-t">
          {Links.map((link, index) => (
                   <div
                      key={index}
@@ -129,7 +129,7 @@ const Footer = () => {
                            >
                               <Link
                                  href={text.link}
-                                 className='inline-block w-full hover:underline transition duration-300 ease-in'
+                                 className='inline-block  hover:underline transition duration-300 ease-in'
                               >
                                  {text.name}
                               </Link>
