@@ -35,24 +35,20 @@ const Footer = () => {
          title: "Categories",
          links: [
             {
-               name: "Heroes Of The Bible",
-               link: "/categories/Heroes Of The Bible",
+               name: "All",
+               link: "/categories/all",
             },
             {
-               name: "Faith",
-               link: "/categories/Faith",
+               name: "Web Development",
+               link: "/categories/web-development",
             },
             {
-               name: "Prayer",
-               link: "/categories/Prayer",
+               name: "Javascript",
+               link: "/categories/javascript",
             },
             {
-               name: "Christian Living",
-               link: "/categories/Christian Living",
-            },
-            {
-               name: "Christian music and art",
-               link: "/categories/Christian music and art",
+               name: "Productivity",
+               link: "/categories/productivity",
             },
          ],
       },
@@ -112,32 +108,32 @@ const Footer = () => {
                className='bg-light text-dark   dark:text-white dark:bg-dark cursor-pointer font-medium rounded px-3 sm:px-5 py-1'
             />
          </form>
-         <div className="grid  grid-cols-1 xs:grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 sm:justify-between w-full mt-16 border-t">
-         {Links.map((link, index) => (
-                  <div
-                     key={index}
-                     className='col-span-1 md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0'
-                  >
-                     <h3 className='text-xl lg:leading-7 font-medium mb-4 sm:mb-5 lg:mb-6 pb-0.5 text-dark dark:text-white'>
-                        {link.title}
-                     </h3>
-                     <ul className='text-sm flex flex-col space-y-3'>
-                        {link.links.map((text, index) => (
-                           <li
-                              key={index}
-                              className='flex items-baseline'
+         <div className='grid  grid-cols-1 xs:grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 sm:justify-between w-full mt-16 border-t'>
+            {Links.map((link, index) => (
+               <div
+                  key={index}
+                  className='col-span-1 md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0'
+               >
+                  <h3 className='text-xl lg:leading-7 font-medium mb-4 sm:mb-5 lg:mb-6 pb-0.5 text-dark dark:text-white'>
+                     {link.title}
+                  </h3>
+                  <ul className='text-sm flex flex-col space-y-3'>
+                     {link.links.map((text, index) => (
+                        <li
+                           key={index}
+                           className='flex items-baseline'
+                        >
+                           <Link
+                              href={text.link}
+                              className='inline-block  hover:underline transition duration-300 ease-in'
                            >
-                              <Link
-                                 href={text.link}
-                                 className='inline-block  hover:underline transition duration-300 ease-in'
-                              >
-                                 {text.name}
-                              </Link>
-                           </li>
-                        ))}
-                     </ul>
-                  </div>
-               ))}
+                              {text.name}
+                           </Link>
+                        </li>
+                     ))}
+                  </ul>
+               </div>
+            ))}
          </div>
          <div className='flex items-center mt-8'>
             <a
