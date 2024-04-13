@@ -13,6 +13,8 @@ const SkillList = [
    "sanity",
    "Python",
    "Mysql",
+   "C",
+   "C++",
 ];
 
 const Skills = () => {
