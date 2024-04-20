@@ -11,11 +11,11 @@ const siteMetadata = {
    socialBanner: "/social-banner.png", // add social banner in the public folder
    email: "iradukundabertin082@gmail.com",
    github: "https://github.com/BertinKimberly",
-   twitter: "https://twitter.com/code_bucks",
+   twitter: "https://twitter.com/Iradukunda31950",
    facebook: "https://facebook.com/",
    youtube: "https://youtube.com/codebucks",
    linkedin: "https://www.linkedin.com/in/iradukunda-bertin-074337261/",
-   dribbble: "https://www.dribbble.com",
+   dribbble: "https://dribbble.com/bertiniradukunda",
    locale: "en-US",
 };
 
