@@ -1,7 +1,7 @@
 ---
 title: "Best Practices for Writing Clean and Maintainable Code"
 description: How to deploy your Next.js apps on Vercel.
-image: "../../public/blogs/roman-synkevych-vXInUOv1n84-unsplash.jpg"
+image: "../../public/blogs/code.jpg"
 publishedAt: "2023-01-02"
 updatedAt: "2023-01-02"
 author: "Bertin"
@@ -95,27 +95,26 @@ Adopt established design patterns and best practices to solve common problems ef
 ```js
 // Singleton pattern for managing application state
 class StateManager {
-  static instance;
+   static instance;
 
-  static getInstance() {
-    if (!StateManager.instance) {
-      StateManager.instance = new StateManager();
-    }
-    return StateManager.instance;
-  }
+   static getInstance() {
+      if (!StateManager.instance) {
+         StateManager.instance = new StateManager();
+      }
+      return StateManager.instance;
+   }
 
-  // State management methods...
+   // State management methods...
 }
-
 ```
 
 ## Key Takeaways
 
-| Key Principle                         | Explanation                                                                                     |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------- |
-| Embrace Semantic HTML                | Utilize semantic HTML elements for clearer structure and improved accessibility.               |
-| Maintain Consistency                 | Enforce consistent coding styles, naming conventions, and indentation across the codebase.      |
-| Prioritize Readability and Documentation | Write self-descriptive code and provide clear comments and documentation for easier understanding. |
-| Optimize for Performance and Scalability | Design code with performance and scalability in mind, optimizing algorithms and data structures. |
-| Streamline Code Structure and Modularity | Organize code into logical modules and components for improved maintainability and reusability. |
-| Leverage Design Patterns and Best Practices | Adopt established design patterns and best practices to solve common problems effectively.       |
+| Key Principle                               | Explanation                                                                                        |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Embrace Semantic HTML                       | Utilize semantic HTML elements for clearer structure and improved accessibility.                   |
+| Maintain Consistency                        | Enforce consistent coding styles, naming conventions, and indentation across the codebase.         |
+| Prioritize Readability and Documentation    | Write self-descriptive code and provide clear comments and documentation for easier understanding. |
+| Optimize for Performance and Scalability    | Design code with performance and scalability in mind, optimizing algorithms and data structures.   |
+| Streamline Code Structure and Modularity    | Organize code into logical modules and components for improved maintainability and reusability.    |
+| Leverage Design Patterns and Best Practices | Adopt established design patterns and best practices to solve common problems effectively.         |
