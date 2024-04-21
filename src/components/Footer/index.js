@@ -1,18 +1,11 @@
 "use client";
 import React from "react";
-import { useForm } from "react-hook-form";
+
 import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
 import siteMetadata from "@/src/utils/siteMetaData";
 import Link from "next/link";
+import SubscribeForm from "./SubscribeForm";
 const Footer = () => {
-   const {
-      register,
-      handleSubmit,
-      formState: { errors },
-   } = useForm();
-   const onSubmit = (data) => console.log(data);
-   console.log(errors);
-
    const Links = [
       {
          title: "Pages",
@@ -84,37 +77,14 @@ const Footer = () => {
 
    return (
       <footer className='mt-16 border-t dark:bg-dark dark:text-white  m-2 sm:m-10 flex flex-col items-center text-dark bg-white'>
-         <h3 className='mt-16 font-medium dark:font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4'>
-            Interesting Stories | Updates | Guides
-         </h3>
-         <p className='mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base'>
-            Subscribe to learn about new technology and updates. Join over 5000+
-            members community to stay up to date with latest news.
-         </p>
-
-         <form
-            onSubmit={handleSubmit(onSubmit)}
-            className='mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-dark  dark:bg-light p-1 sm:p-2 rounded mx04'
-         >
-            <input
-               type='email'
-               placeholder='Enter your email'
-               {...register("email", { required: true, maxLength: 80 })}
-               className='w-full bg-transparent pl-2 sm:pl-0 text-light dark:text-dark focus:border-dark focus:ring-0 border-0 border-b mr-2 pb-1'
-            />
-
-            <input
-               type='submit'
-               className='bg-light text-dark   dark:text-white dark:bg-dark cursor-pointer font-medium rounded px-3 sm:px-5 py-1'
-            />
-         </form>
-         <div className='grid  grid-cols-1 xs:grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 sm:justify-between w-full mt-16 border-t'>
+        
+         <div className='grid  grid-cols-1 xs:grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 sm:justify-between w-full mt-16 '>
             {Links.map((link, index) => (
                <div
                   key={index}
                   className='col-span-1 md:col-span-2 lg:col-span-3 pb-3.5 sm:pb-0'
                >
-                  <h3 className='text-xl lg:leading-7 font-medium mb-4 sm:mb-5 lg:mb-6 pb-0.5 text-dark dark:text-white'>
+                  <h3 className='text-xl lg:leading-7 font-medium mb-4 sm:mb-5 lg:mb-6 pb-0.5 text-[#92caff]'>
                      {link.title}
                   </h3>
                   <ul className='text-sm flex flex-col space-y-3'>
