@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const HomeCoverSection = () => {
    return (
-      <div className='w-full inline-block'>
+      <div className='w-full inline-block z-10'>
          <div className='mx-5 sm:mx-10 text-dark dark:text-light'>
             <div className='my-20 py-10 md:px-4  bg-dry '>
                <div className='lg:grid lg:grid-cols-2 lg:gap-10 items-center'>
@@ -28,7 +28,7 @@ const HomeCoverSection = () => {
                         development. Innovation awaits around every corner!
                      </p>
                   </div>
-                  <div className='flex items-center justify-center p-2 '>
+                  <div className='flex items-center justify-center p-2  earth'>
                      <motion.div
                         whileHover={{
                            scale: 1.2,

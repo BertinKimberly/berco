@@ -75,8 +75,7 @@ const Footer = () => {
    ];
 
    return (
-      <footer className='mt-16 border-t dark:bg-dark dark:text-white  m-2 sm:m-10 flex flex-col items-center text-dark bg-white'>
-        
+      <footer className='mt-16 border-t dark:bg-dark dark:text-white  m-2 sm:m-10 flex flex-col items-center text-dark bg-white z-10'>
          <div className='grid  grid-cols-1 xs:grid-cols-2 md:grid-cols-7 xl:grid-cols-12 gap-5 sm:gap-9 lg:gap-11 xl:gap-7 py-10 sm:justify-between w-full mt-16'>
             {Links.map((link, index) => (
                <div
