@@ -30,15 +30,11 @@ const HomeCoverSection = () => {
                   </div>
                   <div className='flex items-center justify-center p-2 '>
                      <motion.div
-                        animate={{
-                           scale: [1, 2, 2, 1, 1],
-                           rotate: [0, 0, 270, 270, 0],
-                           transition: {
-                              duration: 3,
-                              repeat: Infinity,
-                              repeatType: "loop",
-                           },
+                        whileHover={{
+                           scale: 1.2,
+                           transition: { duration: 1 },
                         }}
+                        whileTap={{ scale: 0.9 }}
                      >
                         <Suspense fallback={<Loader />}>
                            <Image
