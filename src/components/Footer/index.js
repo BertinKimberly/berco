@@ -45,30 +45,38 @@ const Footer = () => {
          ],
       },
       {
-         title: "Me",
+         title: "Popular Posts",
          links: [
             {
-               name: "Dashboard",
-               link: "/dashboard",
+               name: "Best Practices in web development",
+               link: "/blogs/best-practices-for-frontend-development",
             },
 
             {
-               name: "Create New Post",
-               link: "/create-post",
+               name: "PWA",
+               link: "/blogs/progressive-web-apps-pwa",
+            },
+            {
+               name: "What Is AI ? ",
+               link: "/blogs/progressive-web-apps-pwa",
             },
          ],
       },
       {
-         title: "Me",
+         title: "Berco",
          links: [
             {
-               name: "Dashboard",
-               link: "/dashboard",
+               name: "Give me a star on github",
+               link: "https://github.com/BertinKimberly",
             },
 
             {
-               name: "Create New Post",
-               link: "/create-post",
+               name: "Follow me on linkedin",
+               link: "/https://www.linkedin.com/in/iradukunda-bertin-074337261/",
+            },
+            {
+               name: "Follow me on linkedin",
+               link: "/https://www.linkedin.com/in/iradukunda-bertin-074337261/",
             },
          ],
       },

@@ -18,7 +18,6 @@ import { motion, useScroll } from "framer-motion";
 const Header = () => {
    const [mode, setMode] = useThemeSwitch();
    const [click, setClick] = useState(false);
-
    const toggle = () => {
       setClick(!click);
    };

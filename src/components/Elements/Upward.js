@@ -21,7 +21,7 @@ const Upward = () => {
    }, []);
    return (
       <div
-         className={`p-2 fixed bottom-14 right-4 rounded bg-[#92caff] text-light dark:text-dark cursor-pointer  ${
+         className={`p-2 fixed bottom-14 right-4 rounded bg-[#92caff] text-light dark:text-dark cursor-pointer  z-[99] ${
             isScrolling ? "" : "hidden"
          }`}
          onClick={scroll}

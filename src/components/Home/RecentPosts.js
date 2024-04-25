@@ -13,7 +13,7 @@ const RecentPosts = ({ blogs }) => {
             </h2>
             <Link
                href='/categories/all'
-               className='inline-block font-medium text-accent dark:text-accentDark underline underline-offset-2      text-base md:text-lg'
+               className='inline-block font-medium text-dark dark:text-light underline underline-offset-2     text-base md:text-lg'
             >
                More
             </Link>

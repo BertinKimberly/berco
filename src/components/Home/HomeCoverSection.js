@@ -1,11 +1,19 @@
 "use client";
-import React, { Suspense } from "react";
-import hero from "@/public/hero.png";
+import React, { Suspense, useState, useEffect } from "react";
 import Image from "next/image";
 import Loader from "../Loader";
 import { motion } from "framer-motion";
+import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 
 const HomeCoverSection = () => {
+   const [mode, setMode] = useThemeSwitch();
+   const getImageSrc = () =>
+      mode === "dark" ? "/mainIconsDark.svg" : "/mainIcons.svg";
+
+   useEffect(() => {
+      // Code here will run whenever the `mode` state changes
+      console.log("Mode changed:", mode); // Optional for debugging
+   }, [mode]); // Add `mode` as a dependency
    return (
       <div className='w-full inline-block z-10'>
          <div className='mx-5 sm:mx-10 text-dark dark:text-light'>
@@ -37,11 +45,21 @@ const HomeCoverSection = () => {
                         whileTap={{ scale: 0.9 }}
                      >
                         <Suspense fallback={<Loader />}>
-                           <Image
-                              src={hero}
-                              width={200}
-                              height={200}
-                           />
+                           <motion.div
+                              whileHover={{
+                                 scale: 1.2,
+                                 transition: { duration: 1 },
+                              }}
+                              whileTap={{ scale: 0.9 }}
+                              className='w-full h-full flex justify-center items-center'
+                           >
+                              <Image
+                                 src={getImageSrc()}
+                                 alt='work icons'
+                                 height={650}
+                                 width={650}
+                              />
+                           </motion.div>
                         </Suspense>
                      </motion.div>
                   </div>
