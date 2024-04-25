@@ -1,5 +1,5 @@
 "use client";
-import React, { Suspense, useState, useEffect } from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import Loader from "../Loader";
 import { motion } from "framer-motion";
@@ -7,13 +7,14 @@ import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 
 const HomeCoverSection = () => {
    const [mode, setMode] = useThemeSwitch();
-   const getImageSrc = () =>
-      mode === "dark" ? "/mainIconsDark.svg" : "/mainIcons.svg";
 
-   useEffect(() => {
-      // Code here will run whenever the `mode` state changes
-      console.log("Mode changed:", mode); // Optional for debugging
-   }, [mode]); // Add `mode` as a dependency
+   const getImageSrc = () => {
+      if (mode === "dark") {
+         return "/mainIconsDark.svg";
+      } else {
+         ("/mainIcons.svg");
+      }
+   };
    return (
       <div className='w-full inline-block z-10'>
          <div className='mx-5 sm:mx-10 text-dark dark:text-light'>
@@ -36,7 +37,7 @@ const HomeCoverSection = () => {
                         development. Innovation awaits around every corner!
                      </p>
                   </div>
-                  <div className='flex items-center justify-center p-2  earth'>
+                  <div className='flex items-center justify-center p-2  mt-12 md:mt-1 '>
                      <motion.div
                         whileHover={{
                            scale: 1.2,
@@ -56,8 +57,8 @@ const HomeCoverSection = () => {
                               <Image
                                  src={getImageSrc()}
                                  alt='work icons'
-                                 height={650}
-                                 width={650}
+                                 height={600}
+                                 width={600}
                               />
                            </motion.div>
                         </Suspense>
