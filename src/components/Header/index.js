@@ -92,10 +92,10 @@ const Header = () => {
                   About
                </Link>
                <Link
-                  href='/contact'
+                  href='/categories/all'
                   className='mx-2'
                >
-                  Contact
+                  Posts
                </Link>
                <button
                   onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -132,10 +132,10 @@ const Header = () => {
                   About
                </Link>
                <Link
-                  href='/contact'
+                  href='/categories/all'
                   className='mx-2'
                >
-                  Contact
+                  Posts
                </Link>
                <button
                   onClick={() => setMode(mode === "light" ? "dark" : "light")}

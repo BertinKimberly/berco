@@ -3,18 +3,11 @@ import React, { Suspense } from "react";
 import Image from "next/image";
 import Loader from "../Loader";
 import { motion } from "framer-motion";
-import { useThemeSwitch } from "../Hooks/useThemeSwitch";
+import useMode from "./useMode";
 
 const HomeCoverSection = () => {
-   const [mode, setMode] = useThemeSwitch();
+   const mode = useMode();
 
-   const getImageSrc = () => {
-      if (mode === "dark") {
-         return "/mainIconsDark.svg";
-      } else {
-         ("/mainIcons.svg");
-      }
-   };
    return (
       <div className='w-full inline-block z-10'>
          <div className='mx-5 sm:mx-10 text-dark dark:text-light'>
@@ -55,7 +48,11 @@ const HomeCoverSection = () => {
                               className='w-full h-full flex justify-center items-center'
                            >
                               <Image
-                                 src={getImageSrc()}
+                                 src={
+                                    mode === "dark"
+                                       ? "/mainIconsDark.svg"
+                                       : "/mainIcons.svg"
+                                 }
                                  alt='work icons'
                                  height={600}
                                  width={600}
