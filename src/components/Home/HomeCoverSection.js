@@ -3,11 +3,8 @@ import React, { Suspense } from "react";
 import Image from "next/image";
 import Loader from "../Loader";
 import { motion } from "framer-motion";
-import useMode from "./useMode";
 
 const HomeCoverSection = () => {
-   const mode = useMode();
-
    return (
       <div className='w-full inline-block z-10'>
          <div className='mx-5 sm:mx-10 text-dark dark:text-light'>
@@ -48,11 +45,7 @@ const HomeCoverSection = () => {
                               className='w-full h-full flex justify-center items-center'
                            >
                               <Image
-                                 src={
-                                    mode === "dark"
-                                       ? "/mainIconsDark.svg"
-                                       : "/mainIcons.svg"
-                                 }
+                                 src='/mainIconsDark.svg'
                                  alt='work icons'
                                  height={600}
                                  width={600}
