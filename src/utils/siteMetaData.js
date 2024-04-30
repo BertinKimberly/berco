@@ -6,7 +6,7 @@ const siteMetadata = {
    description: "A blog with programming information",
    language: "en-us",
    theme: "system", // system, dark or light
-   siteUrl: "https://create-blog-with-nextjs.vercel.app", // your website URL
+   siteUrl: "https://bercoblog.vercel.app", // your website URL
    siteLogo: "/logo.png",
    socialBanner: "/social-banner.png", // add social banner in the public folder
    email: "iradukundabertin082@gmail.com",

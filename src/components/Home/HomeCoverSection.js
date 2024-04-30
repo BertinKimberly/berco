@@ -5,6 +5,8 @@ import Loader from "../Loader";
 import { motion } from "framer-motion";
 
 const HomeCoverSection = () => {
+
+
    return (
       <div className='w-full inline-block z-10'>
          <div className='mx-5 sm:mx-10 text-dark dark:text-light'>
@@ -45,7 +47,7 @@ const HomeCoverSection = () => {
                               className='w-full h-full flex justify-center items-center'
                            >
                               <Image
-                                 src='/mainIconsDark.svg'
+                                 src="/mainIconsDark.svg"
                                  alt='work icons'
                                  height={600}
                                  width={600}

@@ -80,6 +80,4 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
    color: #747474;
 }
 
-.earth {
-   background: center cover url(../../public/earth.gif);
-}
+
