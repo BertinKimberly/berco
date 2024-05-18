@@ -25,7 +25,7 @@ const Header = () => {
    return (
       <>
          <motion.div
-            className='fixed top-0 left-0 w-full origin-left h-2 bg-[#92caff] z-50'
+            className='fixed top-0 left-0 w-full origin-left h-[2px] bg-[#92caff] z-50'
             style={{ scaleX: scrollYProgress }}
          />
          <header className='w-full p-4  px-5 sm:px-10 flex items-center justify-between z-10'>
