@@ -179,14 +179,7 @@ const Header = () => {
                >
                   <GithubIcon className='  hover:scale-125 transition-all ease duration-200 dark:fill-light' />
                </a>
-               <a
-                  href={siteMetadata.dribbble}
-                  className='inline-block w-6 h-6 mr-4'
-                  aria-label='Check my profile on Dribbble'
-                  target='_blank'
-               >
-                  <DribbbleIcon className='hover:scale-125 transition-all ease duration-200' />
-               </a>
+           
             </div>
          </header>
       </>

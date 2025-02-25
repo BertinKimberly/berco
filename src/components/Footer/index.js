@@ -73,11 +73,7 @@ const Footer = () => {
             {
                name: "Follow me on linkedin",
                link: "/https://www.linkedin.com/in/iradukunda-bertin-074337261/",
-            },
-            {
-               name: "Follow me on linkedin",
-               link: "/https://www.linkedin.com/in/iradukunda-bertin-074337261/",
-            },
+            }
          ],
       },
    ];
@@ -136,19 +132,12 @@ const Footer = () => {
             >
                <GithubIcon className='fill-dark dark:fill-light  hover:scale-125 transition-all ease duration-200' />
             </a>
-            <a
-               href={siteMetadata.dribbble}
-               className='inline-block w-6 h-6 mr-4'
-               aria-label='Check my profile on Dribbble'
-               target='_blank'
-            >
-               <DribbbleIcon className='hover:scale-125 transition-all ease duration-200' />
-            </a>
+            
          </div>
 
          <div className='w-full  mt-16 md:mt-24 font-medium flex  items-center justify-center  '>
             <span className='text-center w-max border-t pt-5 px-2'>
-               &copy;2024 Berco. All rights reserved.
+               &copy;2025 Berco. All rights reserved.
             </span>
          </div>
       </footer>
