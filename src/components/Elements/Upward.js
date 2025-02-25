@@ -23,12 +23,12 @@ const Upward = () => {
    }, []);
    return (
       <div
-         className={`p-4 fixed bottom-14 right-4 rounded-full flex items-center justify-center h-12 w-12 bg-[#92caff] text-light dark:text-dark cursor-pointer  z-[99] ${
+         className={`p-4 fixed bottom-10 right-4 rounded-full flex items-center justify-center h-12 w-12 bg-[#92caff] text-light dark:text-dark cursor-pointer  z-[99] ${
             isScrolling ? "" : "hidden"
          }`}
          onClick={scroll}
       >
-        <ChevronUp />
+        <ChevronUp size={100} className="font-bold" />
       </div>
    );
 };
