@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import siteMetadata from "../utils/siteMetaData";
 import Script from "next/script";
 import Upward from "../components/Elements/Upward";
+import "@/styles/mdx.css"
 
 const inter = Inter({
    subsets: ["latin"],

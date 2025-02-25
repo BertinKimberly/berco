@@ -389,6 +389,122 @@ export const TwitterIcon = ({ className, ...rest }) => {
   );
 };
 
+
+export const XIcon = ({ className, ...rest }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="42"
+      height="43"
+      viewBox="0 0 42 43"
+      className={cx("w-full h-auto", className)}
+      {...rest}
+    >
+      <g>
+        <path
+          fill="currentColor"
+          d="M25.805 19.984L40.299 3.008H36.768L24.31 17.582L14.342 3.008H1.5L16.712 25.434L1.5 43.192H5.031L18.208 27.836L28.787 43.192H41.628L25.804 19.984H25.805ZM20.002 25.652L18.298 23.22L5.766 5.581H12.119L22.023 19.596L23.726 22.028L36.891 40.627H30.539L20.002 25.653V25.652Z"
+        />
+      </g>
+    </svg>
+  );
+};
+
+export const XIconLight = ({ className, ...rest }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="42"
+      height="43"
+      viewBox="0 0 42 43"
+      className={cx("w-full h-auto", className)}
+      {...rest}
+    >
+      <mask id="xLogoLightTransition">
+        <rect width="42" height="43" fill="white" />
+        <circle cx="21" cy="21.5" r="0">
+          <animate
+            attributeName="r"
+            begin="0.2s"
+            dur="0.4s"
+            values="0;21"
+            fill="freeze"
+          />
+        </circle>
+      </mask>
+      <g mask="url(#xLogoLightTransition)">
+        <path
+          fill="#000000"
+          d="M25.805 19.984L40.299 3.008H36.768L24.31 17.582L14.342 3.008H1.5L16.712 25.434L1.5 43.192H5.031L18.208 27.836L28.787 43.192H41.628L25.804 19.984H25.805ZM20.002 25.652L18.298 23.22L5.766 5.581H12.119L22.023 19.596L23.726 22.028L36.891 40.627H30.539L20.002 25.653V25.652Z"
+        />
+      </g>
+      <g>
+        <path
+          fill="currentColor"
+          d="M25.805 19.984L40.299 3.008H36.768L24.31 17.582L14.342 3.008H1.5L16.712 25.434L1.5 43.192H5.031L18.208 27.836L28.787 43.192H41.628L25.804 19.984H25.805ZM20.002 25.652L18.298 23.22L5.766 5.581H12.119L22.023 19.596L23.726 22.028L36.891 40.627H30.539L20.002 25.653V25.652Z"
+          opacity="0"
+        >
+          <animate
+            attributeName="opacity"
+            begin="0.6s"
+            dur="0.3s"
+            values="0;1"
+            fill="freeze"
+          />
+        </path>
+      </g>
+    </svg>
+  );
+};
+
+export const XIconDark = ({ className, ...rest }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="42"
+      height="43"
+      viewBox="0 0 42 43"
+      className={cx("w-full h-auto", className)}
+      {...rest}
+    >
+      <mask id="xLogoDarkTransition">
+        <rect width="42" height="43" fill="white" />
+        <circle cx="21" cy="21.5" r="0">
+          <animate
+            attributeName="r"
+            begin="0.2s"
+            dur="0.4s"
+            values="0;30"
+            fill="freeze"
+          />
+        </circle>
+      </mask>
+      <g mask="url(#xLogoDarkTransition)">
+        <path
+          fill="#ffffff"
+          d="M25.805 19.984L40.299 3.008H36.768L24.31 17.582L14.342 3.008H1.5L16.712 25.434L1.5 43.192H5.031L18.208 27.836L28.787 43.192H41.628L25.804 19.984H25.805ZM20.002 25.652L18.298 23.22L5.766 5.581H12.119L22.023 19.596L23.726 22.028L36.891 40.627H30.539L20.002 25.653V25.652Z"
+        />
+      </g>
+      <g>
+        <path
+          fill="currentColor"
+          d="M25.805 19.984L40.299 3.008H36.768L24.31 17.582L14.342 3.008H1.5L16.712 25.434L1.5 43.192H5.031L18.208 27.836L28.787 43.192H41.628L25.804 19.984H25.805ZM20.002 25.652L18.298 23.22L5.766 5.581H12.119L22.023 19.596L23.726 22.028L36.891 40.627H30.539L20.002 25.653V25.652Z"
+          opacity="0"
+        >
+          <animate
+            attributeName="opacity"
+            begin="0.6s"
+            dur="0.3s"
+            values="0;1"
+            fill="freeze"
+          />
+        </path>
+      </g>
+    </svg>
+  );
+};
+
+
 export const GithubIcon = ({ className, ...rest }) => {
   return (
     <svg
